@@ -1,4 +1,9 @@
 baseURL = 'https://nursyah21.github.io/nursyah-blog/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'My Coding Journey'
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
+disqusShortName = 'nursyah'
+
+
+[params]
+   # commentoEnable = true
