@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'My Coding Journey'
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
-#disqusShortName = 'nursyah'
+disqusShortName = 'nursyah'
 [params]
    # commentoEnable = true
+
+[[params.ananke_socials]]
+name = 'github'
+url = 'https://github.com/nursyah21'

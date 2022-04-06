@@ -2,6 +2,7 @@
 title: "Publish Hugo to Github"
 date: 2022-04-06T14:18:14+07:00
 description: 'create blog with hugo and host with github'
+omit_header_text: false
 #featured_image : ' '
 draft: false
 ---
