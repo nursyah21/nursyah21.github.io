@@ -14,14 +14,14 @@ Go is an open source programming language that makes it easy to build simple, re
 If you want to develop faster, perhaps because you have many different services to write, or you have a large team of developers, then Go is your language of choice. Go gives you concurrency as a first-class citizen, and does not tolerate unsafe memory access (neither does Rust), but without forcing you to manage every last detail. Go is fast and powerful, but it avoids bogging the developer down, focusing instead on simplicity and uniformity. If on the other hand, wringing out every last ounce of performance is a necessity, then Rust should be your choice.
 —Andrew Lader
 
-find more article go vs rust in [https://bitfieldconsulting.com/golang/rust-vs-go](https://bitfieldconsulting.com/golang/rust-vs-go)
+find more about go vs rust, in this link [https://bitfieldconsulting.com/golang/rust-vs-go](https://bitfieldconsulting.com/golang/rust-vs-go)
 
 
 ----------------------------
 link to learn, please fork and clone to your local [Golang Training](https://github.com/nursyah21/GolangTraining)
 
 after we clone repo, we need install tools for golang
-{{<figure src="../../images/golang-exercise/ss1.png" >}}
+{{<figure src="../../images/publish-hugo-to-github/ss1.png" >}}
 
 dont forget to create new branch so we keep originals untouch
 ```bash
@@ -74,10 +74,9 @@ please refer to this link [https://go.dev/doc/code](https://go.dev/doc/code)
 
 
 -------------------
-my summary for chapter 1, you will find some code similiar with c/c++ you can create "* *pointer*" and  "& *address*" in chapter you will find trouble if you try import module in local but please refer to this video [https://www.youtube.com/watch?v=Nv8J_Ruc280](https://www.youtube.com/watch?v=Nv8J_Ruc280) to get solutions.
+my summary for chapter 1, you will find some code similiar with c/c++ you can create "* *pointer*" and  "& *address*" in this chapter, if you find trouble to try import module in local, please refer to this video [https://www.youtube.com/watch?v=Nv8J_Ruc280](https://www.youtube.com/watch?v=Nv8J_Ruc280)
 
-
-{{<figure src="../../images/golang-exercise/ss2.png">}}
+{{<figure src="../../images/publish-hugo-to-github/ss2.png">}}
 
 this is sample code of 13_excercise-solutions
 ```go
@@ -107,9 +106,9 @@ func main(){
 ```
 
 --------------------
-in chapter 13-16 you will find some concept still similiar with c/c++
+in chapter 13-16 you will find some concept similiar with c/c++
 
-{{<figure src="../../images/golang-exercise/ss3.png">}}
+{{<figure src="../../images/publish-hugo-to-github/ss3.png">}}
 
 sample code of 16_exercise
 ```go
@@ -248,14 +247,14 @@ func main() {
 	}
 }
 ```
-because in some exercise you will find chan (channel) maybe you will need to know what is this refer to this link [https://golangdocs.com/channels-in-golang](https://golangdocs.com/channels-in-golang)
+because in some exercise you will find chan (channel) ,maybe you will need to know what about is this, [https://golangdocs.com/channels-in-golang](https://golangdocs.com/channels-in-golang)
 
 
 ----------------------------
 total of exercise in this repo is 99, but we will stop in chapter 26_questions-from-students
 
-{{<figure src="../../images/golang-exercise/ss4.png">}}
-{{<figure src="../../images/golang-exercise/ss5.png">}}
+{{<figure src="../../images/publish-hugo-to-github/ss4.png">}}
+{{<figure src="../../images/publish-hugo-to-github/ss5.png">}}
 
 at least for now we have some basics of go and we ready to start learn another project in go.
 

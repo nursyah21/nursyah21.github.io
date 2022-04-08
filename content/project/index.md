@@ -7,9 +7,9 @@ menu: main
 
 list my project with golang
 
-### hugo blog
+### [nursyah's blog](https://nursyah21.github.io/nursyah-blog)
 
-<img src="../images/project/blog-hugo.png" style="width:100%" />
+![hugo-blog](../images/project/blog-hugo.png)
 
-{{< figure src="../images/project/blog-hugo.png" alt="Description" href="#">}}
+story: i want to create website, where i can post my code learning experience. <!--so i'm planning to make personal blog, and because this year i want to focus learning with golang.--> i make this blog with hugo and use [ananke](https://github.com/theNewDynamic/gohugo-theme-ananke) theme. <!-- i use framework, so i can focus to create article instead of make code from scratch.--> you can read this [article](https://nursyah21.github.io/nursyah-blog/posts/publish-hugo-to-github/) how i create this blog and publish to github
 
