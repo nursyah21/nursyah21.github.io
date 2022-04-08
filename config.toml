@@ -4,6 +4,11 @@ title = 'My Coding Journey'
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 
 disqusShortName = 'nursyah'
+
+[taxonomies]
+tag = 'tag'
+category = 'categories'
+
 [params]
    # commentoEnable = true
 
