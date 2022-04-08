@@ -6,3 +6,10 @@ menu: main
 ---
 
 list my project with golang
+
+### hugo blog
+
+<img src="../images/project/blog-hugo.png" style="width:100%" />
+
+{{< figure src="../images/project/blog-hugo.png" alt="Description" href="#">}}
+
