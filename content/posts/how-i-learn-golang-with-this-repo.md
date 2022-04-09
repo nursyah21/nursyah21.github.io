@@ -21,7 +21,7 @@ find more about go vs rust, in this link [https://bitfieldconsulting.com/golang/
 link to learn, please fork and clone to your local [Golang Training](https://github.com/nursyah21/GolangTraining)
 
 after we clone repo, we need install tools for golang
-{{<figure src="../../images/publish-hugo-to-github/ss1.png" >}}
+{{<figure src="../../images/how-i-learn-golang-with-this-repo/ss1.png" >}}
 
 dont forget to create new branch so we keep originals untouch
 ```bash
@@ -76,7 +76,7 @@ please refer to this link [https://go.dev/doc/code](https://go.dev/doc/code)
 -------------------
 my summary for chapter 1, you will find some code similiar with c/c++ you can create "* *pointer*" and  "& *address*" in this chapter, if you find trouble to try import module in local, please refer to this video [https://www.youtube.com/watch?v=Nv8J_Ruc280](https://www.youtube.com/watch?v=Nv8J_Ruc280)
 
-{{<figure src="../../images/publish-hugo-to-github/ss2.png">}}
+{{<figure src="../../images/how-i-learn-golang-with-this-repo/ss2.png">}}
 
 this is sample code of 13_excercise-solutions
 ```go
@@ -108,7 +108,7 @@ func main(){
 --------------------
 in chapter 13-16 you will find some concept similiar with c/c++
 
-{{<figure src="../../images/publish-hugo-to-github/ss3.png">}}
+{{<figure src="../../images/how-i-learn-golang-with-this-repo/ss3.png">}}
 
 sample code of 16_exercise
 ```go
@@ -253,8 +253,8 @@ because in some exercise you will find chan (channel) ,maybe you will need to kn
 ----------------------------
 total of exercise in this repo is 99, but we will stop in chapter 26_questions-from-students
 
-{{<figure src="../../images/publish-hugo-to-github/ss4.png">}}
-{{<figure src="../../images/publish-hugo-to-github/ss5.png">}}
+{{<figure src="../../images/how-i-learn-golang-with-this-repo/ss4.png">}}
+{{<figure src="../../images/how-i-learn-golang-with-this-repo/ss5.png">}}
 
 at least for now we have some basics of go and we ready to start learn another project in go.
 
