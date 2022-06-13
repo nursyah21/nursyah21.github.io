@@ -1,0 +1,29 @@
+:root{
+    --blue: #84b3ff;
+    --white: #fff;
+    --aHover: rgb(85, 92, 211);
+}
+
+body{
+    margin: 0;
+}
+
+.nav{
+    background: var(--blue);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav a:hover{
+    color: var(--aHover);
+}
+
+.hero{
+    height: 100px;
+}

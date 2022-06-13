@@ -1,4 +1,4 @@
-const ALPHABET = "abcdefghijklmnopqrstuvwxyz"
+const ALPHABET = "acefhjnorsuxyz"
 const NAME = "nursyah"
 const writing = document.getElementById("writing")
 const lang = document.getElementById("lang")
@@ -37,7 +37,7 @@ function generatedWriting(name, combination, w) {
 
 
     if (str.length == name.length && str[str.length - 1] == name[name.length - 1]) clearInterval(x)
-  }, 150)
+  }, 50)
 }
 
 
@@ -59,7 +59,7 @@ function change() {
   }
   const id = {
     aboutme: "tentang ku<br>\
-    halo, senang bertemu denganmu, perkenalkan namaku nursyah, aku seorang mahasiswa rekayasa perangkat lunak asal indonesia. aku senang mempelajari hal baru, aku menulis kode dengan js, java, cpp, python, dan lebih banyak lagi. ingin tau apa yang sudah kubuat, cek dibawah untuk melihat projectku atau kunjungi githubku. hobby ku adalah <i class=\"fa-solid fa-music\"></i> mendengarkan musik dan <i\
+    halo, senang bertemu denganmu, hai aku nursyah, aku seorang mahasiswa rekayasa perangkat lunak asal indonesia. aku senang mempelajari hal baru, aku menulis kode dengan js, java, cpp, python, dan lebih banyak lagi. ingin tau apa yang sudah kubuat, cek dibawah untuk melihat projectku atau kunjungi githubku. hobby ku adalah <i class=\"fa-solid fa-music\"></i> mendengarkan musik dan <i\
         class=\"fa-solid fa-code\"></i> menulis kode.",
     footer: "dibuat dengan <i class=\"fa-solid fa-heart\"></i>"
   }
