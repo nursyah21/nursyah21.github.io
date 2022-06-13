@@ -1,11 +1,25 @@
 :root{
-    --blue: #84b3ff;
+    --blue: #458bfa;
     --white: #fff;
-    --aHover: rgb(85, 92, 211);
+    --aHover: rgb(24, 51, 66);
+    --hero: #ffffff;
+    --hero-text: #0062ff;
+    --gray : rgba(220, 220, 220, 0.868);
+    --default-color: rgb(93, 93, 93);
+}
+
+*{
+    overflow-x: hidden;
 }
 
 body{
     margin: 0;
+    width: 100%;
+    color: var(--default-color);
+}
+
+.container{
+    padding: 20px;
 }
 
 .nav{
@@ -15,9 +29,14 @@ body{
     justify-content: space-evenly;
 }
 
+
+
 .nav a{
     color: var(--white);
     text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    /* margin-left: 20px; */
 }
 
 .nav a:hover{
@@ -25,5 +44,70 @@ body{
 }
 
 .hero{
-    height: 100px;
+    background-color: var(--hero);
+    width: 100%;
+    height: 200px;
+    color: var(--hero-text);
+    font-size: 70px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#aboutme{
+    border: 10px solid var(--gray);
+    padding: 20px;
+    border-radius: 10px;   
+
+    font-size: 40px;
+}
+
+#aboutme .content{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.projects{
+    margin-top: 20px;
+    border: 10px solid var(--gray);
+    padding: 20px;
+    border-radius: 10px;   
+    font-size: 40px;
+}
+
+.projects .project{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.project_button{
+    display: flex;
+    justify-content: center;
+}
+.project_button a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--blue);
+}
+.project_button a:hover{
+    color: var(--gray);
+}
+
+
+#footer{
+    background: var(--blue);
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    color: var(--white);
+    justify-content: center;
+    bottom: 0;
+}
+
+#footer i{
+    margin-left: 10px;
 }
