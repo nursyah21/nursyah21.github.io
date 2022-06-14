@@ -1,4 +1,4 @@
-const ALPHABET = "acefhjnorsuxyz"
+const ALPHABET = "abcdefghijklmnopqrstuvwxyz"
 const NAME = "nursyah"
 const writing = document.getElementById("writing")
 const lang = document.getElementById("lang")
@@ -40,5 +40,27 @@ function generatedWriting(name, combination, w) {
   }, 50)
 }
 
+function generatedWriting2(name, combination, w){
+  
+  for(var i=0; i <name.length;i++){
+    var temp = document.createElement("div")
+    temp.innerText = combination[i]
+    w.appendChild(temp);
+  }
+  
+  for(var i=0; i < name.length; i++)
+    generatedWriting2Helper(w.childNodes[i], name[i], randomString(combination));
+    
+}
 
-generatedWriting(NAME, randomString(ALPHABET), writing)
+function generatedWriting2Helper(c1, c2, combination){
+  var i=0;
+  var x = setInterval(()=>{
+    c1.innerText = combination[i];
+    if(c1.innerText == c2)clearInterval(x)
+    i++;
+    if (i > combination.length)i=0;
+  }, 100)
+}
+
+generatedWriting2(NAME, randomString(ALPHABET), writing)
