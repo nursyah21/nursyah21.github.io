@@ -164,6 +164,12 @@ img{
     .containerMain{
         width: 90%;
     }
+    .link{
+        flex-direction: column;
+    }
+    .buttonlink{
+        margin-top: 10px;
+    }
 }
 
 @media 
