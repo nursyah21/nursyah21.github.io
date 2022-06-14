@@ -89,6 +89,9 @@ a:hover{
 .buttonlink a{
     display: flex;
 }
+.buttonlink a i{
+    margin-right: 6px;
+}
 
 .buttonlink:hover{
     background-color: var(--blue);
