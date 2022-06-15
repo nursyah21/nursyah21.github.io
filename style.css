@@ -25,7 +25,7 @@ body{
 
 .containerMain{
     margin: 60px 0;
-    width: 50%;
+    width: 60%;
     border-radius: 20px;
     border: 1px solid var(--gray);
     box-shadow: 10px 8px 10px var(--gray);
@@ -89,8 +89,14 @@ a:hover{
 .buttonlink a{
     display: flex;
 }
+
 .buttonlink a i{
     margin-right: 6px;
+}
+
+.buttonlink:hover a{
+    background-color: var(--blue);
+    color: #fff;
 }
 
 .buttonlink:hover{
@@ -98,10 +104,6 @@ a:hover{
     color: #fff;
 }
 
-
-.buttonlink a:hover{
-    color: #fff;
-}
 
 #aboutme{
     padding: 20px;
@@ -113,7 +115,8 @@ a:hover{
 
 #aboutme .content{
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    
 }
 
 .projects{
@@ -123,7 +126,6 @@ a:hover{
     border-radius: 10px;   
     box-shadow: 3px 8px 10px rgb(107, 105, 105);
     font-size: 40px;
-    
 }
 
 .projects .project{
@@ -133,16 +135,24 @@ a:hover{
 .project{
     display: flex;
     flex: 1;
-    width: max-content;
+    width: max-content;;
     overflow-x: visible;
 }
 .item{
-    text-align: center;
     margin-left: 10px;
+    display: flex;
+}
+
+.item_description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    flex-wrap: wrap;
 }
 
 img{
-    height: 300px;
+    height: 350px;
+    width: 200px;
 }
 
 
@@ -172,4 +182,11 @@ img{
     }
 }
 
-@media 
+@media only screen and (max-width: 400px){
+    .item{
+        flex-direction: column;
+    }
+    .item_description{
+        margin-left: 0;
+    }
+}
