@@ -5,19 +5,15 @@
       softwares:[
         {
           app: "vscode",
-          desc: "for develop web app (most used)"
+          desc: "web and other (most used)"
         },
         {
           app: "android studio",
-          desc: "for develop android app"
+          desc: "android app"
         },
         {
           app: "intelij idea",
-          desc: "for develop java app"
-        },
-        {
-          app: "pycharm",
-          desc: "for develop python (big project)"
+          desc: "java app"
         },
         {
           app: "figma",
@@ -32,8 +28,20 @@
           desc: "python playground"
         },
         {
-          app: "xampp",
-          desc: "apache, mysql, ftp"
+          app: "erdplus",
+          desc: "create schema database"
+        },
+        {
+          app: "google workspace",
+          desc: "docs, keep, gdrive"
+        },
+        {
+          app: "supabase",
+          desc: "create backend"
+        },
+        {
+          app: "github",
+          desc: "hosting code"
         }
       ],
       hardwares:[
@@ -59,7 +67,7 @@
   <!-- header nursyah -->
   <div class="flex flex-col text-center h-[100vh] justify-center text-[#0CC5FF] bg-[rgba(12,197,255,10%)]">
     <h1 class="text-[3rem]">NURSYAH</h1><br>
-    <p class="mt-[-30px] sm:mt-[-10px]">Android / Web 
+    <p class="mt-[-10px]">Android / Web 
       <a href="#project"><span class="bg-[#0CC5FF] text-white px-1 py-[2px] hover:bg-white hover:text-[#0CC5FF]">Developer</span></a>
       
     </p>
@@ -93,7 +101,7 @@
     </div>
   </div>
 
-  <!-- software, Hardware used -->
+  <!-- tools, Hardware used -->
   <div class="flex flex-col text-center h-[100vh]  justify-center text-[#0CC5FF] bg-[rgba(12,197,255,14%)]">
     
     <p class="mb-1"><span class="bg-[#0CC5FF] text-white hover:text-[#0CC5FF] hover:bg-white px-1 py-[2px]">Software</span></p>
