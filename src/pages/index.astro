@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+const post = await Astro.glob("../pages/post/*.md");
+---
+
+<Layout title="Nursyah's page">
+	<main>
+		<h1><span class="text-gradient">Nursyah's</span></h1>
+		<p class="flex">
+			Hi i'm nursyah, a third year software engineer student at institut
+			teknologi telkom surabaya. currently i'm focusing on learning kotlin to create android software and something amazing. <br />
+			besides on coding i likes to listening music, and read manga or novel
+		</p>
+		<br>
+		<a href="https://www.linkedin.com/in/nursyahjaya-ramadaniputra-6b44ba149/">linkedin</a>
+		<a href="https://github.com/nursyah21" class="px-2">github</a>
+		<a href="#">resume</a>
+
+		<!-- post / project -->
+		<section>
+			{
+				post.map((post) => (
+					<div class="p-2 bg-slate-800 rounded-md m-2 ">
+						<a class="no-underline" href={post.url}>
+							{post.frontmatter.title}
+						</a>
+						<p>{post.frontmatter.description}</p>
+					</div>
+				))
+			}
+		</section>
+	</main>
+</Layout>
+
+<style>
+	h1 {
+		font-size: 3rem;
+		font-weight: 800;
+		margin: 0;
+	}
+
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 1rem;
+		padding: 0;
+	}
+</style>
