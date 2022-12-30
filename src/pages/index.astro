@@ -2,9 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 	
 const getTime = (str:string) => {
-	var i = Date.parse(str.split('-').reverse().join('-'))
-	console.log(i)
-	return i
+	return Date.parse(str.split('-').reverse().join('-'))
 }
 
 const post = (await Astro.glob("../pages/post/*.md")).sort(
