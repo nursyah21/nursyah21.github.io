@@ -2,7 +2,7 @@
 layout: ../../layouts/PostLayout.astro
 title: finance app android
 author: nursyah
-date: 23-12-2022
+date: 31-12-2022
 description: A simple finance app android with dark theme
 --- 
 <p align="center">
@@ -21,4 +21,5 @@ screenshots application
 
 source-code: https://github.com/nursyah21/financeapp-android <br><br>
 
-at the start of development, i want to build a simple android app with applying modern android development like jetpack compose, hilt dependencies, and baseline profiles
+at the start of development, i want to build a simple android app with applying modern android
+ development like jetpack compose, hilt dependencies, and baseline profiles

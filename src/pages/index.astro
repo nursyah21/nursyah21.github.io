@@ -1,8 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
+	
+const getTime = (str:string) => {
+	var i = Date.parse(str.split('-').reverse().join('-'))
+	console.log(i)
+	return i
+}
 
-const post = await Astro.glob("../pages/post/*.md");
+const post = (await Astro.glob("../pages/post/*.md")).sort(
+	(a:any, b:any) => 
+		getTime(b.frontmatter.date) - getTime(a.frontmatter.date)
+	);
 ---
+
 
 <Layout title="Nursyah's page">
 	<h1><span class="text-gradient">Nursyah's</span></h1>
@@ -21,12 +31,19 @@ const post = await Astro.glob("../pages/post/*.md");
 		{
 			post.map((post) => (
 				<div class="p-2 bg-slate-800 rounded-md m-2 ">
-					<a class="no-underline" href={post.url}>
+					<div class="flex justify-between">
+						<a class="no-underline" href={post.url}>
 						{post.frontmatter.title}
-					</a>
+						</a>
+						<p class="text-slate-400 text-sm">
+							{post.frontmatter.date}
+						</p>
+					</div>
+
 					<p>{post.frontmatter.description}</p>
 				</div>
 			))
+			
 		}
 	</section>
 </Layout>
