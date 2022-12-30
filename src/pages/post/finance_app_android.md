@@ -6,7 +6,7 @@ date: 23-12-2022
 description: A simple finance app android with dark theme
 --- 
 <p align="center">
-  <img src="/public/finance_app_android/icon.png" width="140px" />
+  <img src="/finance_app_android/icon.png" width="140px" />
 </p> <br>
 
 A simple finance app android with dark theme
@@ -14,9 +14,9 @@ A simple finance app android with dark theme
 screenshots application
 
 <p class="flex overflow-auto justify-between m-2">
-  <img src="/public/finance_app_android/finance_ss1.png" width="200p"/>
-  <img src="/public/finance_app_android/finance_ss2.png" width="200p" class="mx-2"/>
-  <img src="/public/finance_app_android/finance_ss3.png" width="200p"/>
+  <img src="/finance_app_android/finance_ss1.png" width="200p"/>
+  <img src="/finance_app_android/finance_ss2.png" width="200p" class="mx-2"/>
+  <img src="/finance_app_android/finance_ss3.png" width="200p"/>
 </p>
 
 source-code: https://github.com/nursyah21/financeapp-android <br><br>
