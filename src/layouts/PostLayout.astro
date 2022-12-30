@@ -4,10 +4,8 @@ const {frontmatter} = Astro.props
 ---
 
 <Layout title={frontmatter.title+" | Nursyah"}>
-	<main>
-		<h1 class="text-gradient">{frontmatter.title}</h1>
-		<p class="text-xs">{frontmatter.date}</p>
-		<br>
-		<slot />
-	</main>
+	<h1 class="text-gradient">{frontmatter.title}</h1>
+	<p class="text-xs">{frontmatter.date}</p>
+	<br>
+	<slot />
 </Layout>

@@ -1,37 +1,34 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 
 const post = await Astro.glob("../pages/post/*.md");
 ---
 
 <Layout title="Nursyah's page">
-	<main>
-		<h1><span class="text-gradient">Nursyah's</span></h1>
-		<p class="flex">
-			Hi i'm nursyah, a third year software engineer student at institut
-			teknologi telkom surabaya. currently i'm focusing on learning kotlin to create android software and something amazing. <br />
-			besides on coding i likes to listening music, and read manga or novel
-		</p>
-		<br>
-		<a href="https://www.linkedin.com/in/nursyahjaya-ramadaniputra-6b44ba149/">linkedin</a>
-		<a href="https://github.com/nursyah21" class="px-2">github</a>
-		<a href="https://drive.google.com/file/d/17f3wyqy2YX00GquNqzzu751PUgyMdHI8/view?usp=share_link">resume</a>
+	<h1><span class="text-gradient">Nursyah's</span></h1>
+	<p class="flex">
+		Hi i'm nursyah, a third year software engineer student at institut
+		teknologi telkom surabaya. currently i'm focusing on learning kotlin to create android software and something amazing. <br />
+		besides on coding i likes to listening music, and read manga or novel
+	</p>
+	<br>
+	<a href="https://www.linkedin.com/in/nursyahjaya-ramadaniputra-6b44ba149/">linkedin</a>
+	<a href="https://github.com/nursyah21" class="px-2">github</a>
+	<a href="https://drive.google.com/file/d/17f3wyqy2YX00GquNqzzu751PUgyMdHI8/view?usp=share_link">resume</a>
 
-		<!-- post / project -->
-		<section>
-			{
-				post.map((post) => (
-					<div class="p-2 bg-slate-800 rounded-md m-2 ">
-						<a class="no-underline" href={post.url}>
-							{post.frontmatter.title}
-						</a>
-						<p>{post.frontmatter.description}</p>
-					</div>
-				))
-			}
-		</section>
-	</main>
+	<!-- post / project -->
+	<section>
+		{
+			post.map((post) => (
+				<div class="p-2 bg-slate-800 rounded-md m-2 ">
+					<a class="no-underline" href={post.url}>
+						{post.frontmatter.title}
+					</a>
+					<p>{post.frontmatter.description}</p>
+				</div>
+			))
+		}
+	</section>
 </Layout>
 
 <style>
