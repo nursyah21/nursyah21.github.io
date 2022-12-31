@@ -15,7 +15,7 @@ the website itself can be dynamic and static, dynamic websites themselves are li
 
 here I am confused about how to customize the appearance of the website so that it fits what I want. to upload our theme, we have to pay. I finally gave up :( [my wordpress](https://nursyahx.wordpress.com/)
 
-![wordpress](/public/myblog/wordpress.png)
+![wordpress](/myblog/wordpress.png)
 <br>
 
 then how can we make a website that is easy to customize and at an affordable price, luckily there are services like [github pages](https://pages.github.com/), [netlify](https://www.netlify.com/) or similar to upload static web for free.
@@ -25,7 +25,7 @@ This website itself uses the services of github pages for hosting. we can also a
 
 then the first website that I created and that I put on the github page, was like this [my first website](https://nursyah21.github.io/archive_hugo_web/)
 
-![hugo](/public/myblog/hugo.png)
+![hugo](/myblog/hugo.png)
 
 This website uses [Hugo](https://gohugo.io/), Hugo is one of the most popular open-source static site generators with its amazing speed and flexibility. The reason I use this, because Hugo uses [golang](https://go.dev/)
 at that time I want to learn to use golang, so why don't I try to make a website using golang
