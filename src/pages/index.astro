@@ -25,10 +25,10 @@ const post = (await Astro.glob("../pages/post/*.md")).sort(
 	<a href="https://drive.google.com/file/d/17f3wyqy2YX00GquNqzzu751PUgyMdHI8/view?usp=share_link">resume</a>
 
 	<!-- post / project -->
-	<section>
+	<section></section>
 		{
 			post.map((post) => (
-				<div class="p-2 bg-slate-800 rounded-md m-2 ">
+				<div class="p-2 bg-slate-800 rounded-md  my-2">
 					<div class="flex justify-between">
 						<a class="no-underline" href={post.url}>
 						{post.frontmatter.title}
@@ -43,7 +43,7 @@ const post = (await Astro.glob("../pages/post/*.md")).sort(
 			))
 			
 		}
-	</section>
+	
 </Layout>
 
 <style>

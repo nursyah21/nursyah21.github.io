@@ -20,14 +20,24 @@ const { title } = Astro.props;
 			<slot />
 
 			<footer class="text-center text-slate-400">
-				<br><br><br>
-				<a href="/">nursyah21.github.io</a> <br>
-				copyright 2022 <br>
+				<br /><br /><br />
+				<a href="/">nursyah21.github.io</a>
+				<br />
+				copyright 2022 <br />
 			</footer>
 		</main>
 	</body>
 </html>
 <style is:global>
+	hr {
+		border-top: 1px solid rgb(148 163 184);
+	}
+	ul {
+		list-style-type: disc;
+	}
+	ol {
+		list-style-type: decimal;
+	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
 		-webkit-background-clip: text;
