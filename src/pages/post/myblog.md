@@ -19,7 +19,7 @@ but on my personal opinion, wordpress is quite difficult to customize how it loo
 ![wordpress](/myblog/wordpress.png)
 <br>
 
-then let's move to alternative solution, by the way has the solution has been found?
+then let's move to alternative solution.
 
 at that time there was a popular tool to create static site, namely [Hugo](https://gohugo.io/), so i begin to create my new personal website with this tool, you can see my previous website using this tool in -> [my website hugo](https://nursyah21.github.io/archive_hugo_web/)
 <br><br>
