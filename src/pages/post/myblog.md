@@ -3,6 +3,7 @@ layout: ../../layouts/PostLayout.astro
 title: Nursyah's blog
 author: nursyah
 date: 28-12-2022
+last_update: 01-01-2023
 description: Story of my personal page
 --- 
 

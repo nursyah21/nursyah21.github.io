@@ -3,6 +3,7 @@ layout: ../../layouts/PostLayout.astro
 title: Finance app android
 author: nursyah
 date: 31-12-2022
+last_update: 31-12-2022
 description: A simple finance app android with dark theme
 --- 
 <p align="center">

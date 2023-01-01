@@ -5,7 +5,11 @@ const {frontmatter} = Astro.props
 
 <Layout title={frontmatter.title+" | Nursyah"}>
 	<h1 class="text-gradient">{frontmatter.title}</h1>
-	<p class="text-xs">{frontmatter.date}</p>
+	
+	{frontmatter.date == frontmatter.last_update ? 
+		<p class="text-xs">{frontmatter.date}</p> :
+		<p class="text-xs">last update: {frontmatter.last_update}</p>
+	}
 	<br>
 	<slot />
 
