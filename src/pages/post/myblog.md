@@ -6,31 +6,39 @@ date: 28-12-2022
 description: Story of my personal page
 --- 
 
+**Introduction**
 
 for programmers, a personal web is a place to put a portfolio, as well as to show their expertise in the field of web technology.
 <br><br>
 
-the website itself can be dynamic and static, dynamic websites themselves are like [wordpress](https://wordpress.com/), as a programmer myself I want a website that is easy to customize and free or at least affordable in this case wordpress is not the answer.
-<br><br>
+as you may know [wordpress](https://wordpress.com/) is popular tool to create website, even if you are not someone in this field there are thousands or maybe millions people using it to create their website.
 
-here I am confused about how to customize the appearance of the website so that it fits what I want. to upload our theme, we have to pay. I finally gave up :( [my wordpress](https://nursyahx.wordpress.com/)
+but on my personal opinion, wordpress is quite difficult to customize how it look. here I am confused about how to customize the appearance so that it fits what I want. [curious aboy my wordpress](https://nursyahx.wordpress.com/)
+<br><br>
 
 ![wordpress](/myblog/wordpress.png)
 <br>
 
-then how can we make a website that is easy to customize and at an affordable price, luckily there are services like [github pages](https://pages.github.com/), [netlify](https://www.netlify.com/) or similar to upload static web for free.
+then let's move to alternative solution, by the way has the solution has been found?
 
-This website itself uses the services of github pages for hosting. we can also add a domain name if we want, but I think using a github.io as a domain looks pretty cool.
+at that time there was a popular tool to create static site, namely [Hugo](https://gohugo.io/), so i begin to create my new personal website with this tool, you can see my previous website using this tool in -> [my website hugo](https://nursyah21.github.io/archive_hugo_web/)
 <br><br>
-
-then the first website that I created and that I put on the github page, was like this [my first website](https://nursyah21.github.io/archive_hugo_web/)
 
 ![hugo](/myblog/hugo.png)
+<br>
 
-This website uses [Hugo](https://gohugo.io/), Hugo is one of the most popular open-source static site generators with its amazing speed and flexibility. The reason I use this, because Hugo uses [golang](https://go.dev/)
-at that time I want to learn to use golang, so why don't I try to make a website using golang
+however after spending time with hugo, i realized that i just want to create static site without articles. just show about me. and again i move from hugo to use [vite]([https://vitejs.dev/]) as frontend tool, [vuejs](https://vuejs.org/) as frontend framework and [tailwindcss](https://tailwindcss.com/) as css framework.
+
+you see i like to learn something new that's way i move from technology to another technology, curious how it look [click this link](/archiveweb_vue/index.html)
 <br><br>
 
-at least it's better in terms of customization than before, but it's still quite difficult to customize. my website use theme [ananke](https://github.com/theNewDynamic/gohugo-theme-ananke),
+![vite](/myblog/vite.png)
+<br><br>
 
-but Hugo's advantage is that the build speed itself is very fast, less than 1 second, and if you are satisfied with the theme that has been provided and you are focused on writing an article, Hugo is the right choice.
+and now i want to create website like my previous web with feature articles but easy to customize.
+
+fortunately there's a tool called [astro](https://astro.build/) to make it happen, in astro there already exist a feature markdown like hugo and structure project like vue and so this is the result of my website using astro
+
+<br><br>
+
+![astro](/website.png)

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><style type="text/css" id="dark-mode-custom-style" lang="en"></style><style type="text/css" id="dark-mode-native-style" lang="en"></style><style type="text/css" id="dark-mode-native-sheet" lang="en"></style><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script type="module" src="nursyah_files/client"></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nursyah</title>
+  <style type="text/css" data-vite-dev-id="/media/nursyah/data/development/oldWeb/src/index.css">/*
+! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+*/
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+.mt-\[-30px\] {
+  margin-top: -30px;
+}
+.mt-4 {
+  margin-top: 1rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
+}
+.mt-\[-3px\] {
+  margin-top: -3px;
+}
+.mt-\[-2px\] {
+  margin-top: -2px;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
+}
+.flex {
+  display: flex;
+}
+.table {
+  display: table;
+}
+.h-\[100vh\] {
+  height: 100vh;
+}
+.w-\[23px\] {
+  width: 23px;
+}
+.w-\[40rem\] {
+  width: 40rem;
+}
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+.w-\[128px\] {
+  width: 128px;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.rounded-\[2rem\] {
+  border-radius: 2rem;
+}
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+.bg-\[rgba\(12\2c 197\2c 255\2c 10\%\)\] {
+  background-color: rgba(12,197,255,10%);
+}
+.bg-\[\#0CC5FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(12 197 255 / var(--tw-bg-opacity));
+}
+.bg-\[rgba\(12\2c 197\2c 255\2c 12\%\)\] {
+  background-color: rgba(12,197,255,12%);
+}
+.bg-\[rgba\(12\2c 197\2c 255\2c 14\%\)\] {
+  background-color: rgba(12,197,255,14%);
+}
+.bg-\[rgba\(37\2c 23\2c 81\2c 30\%\)\] {
+  background-color: rgba(37,23,81,30%);
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.py-\[2px\] {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-\[3rem\] {
+  font-size: 3rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-\[\#0CC5FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(12 197 255 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.underline {
+  text-decoration-line: underline;
+}
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.hover\:fill-white:hover {
+  fill: #fff;
+}
+.hover\:text-\[\#0CC5FF\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(12 197 255 / var(--tw-text-opacity));
+}
+.hover\:opacity-50:hover {
+  opacity: 0.5;
+}
+@media (min-width: 640px) {
+
+  .sm\:mt-\[-10px\] {
+    margin-top: -10px;
+  }
+
+  .sm\:text-\[1rem\] {
+    font-size: 1rem;
+  }
+
+  .sm\:leading-5 {
+    line-height: 1.25rem;
+  }
+}
+</style></head>
+  <body class="bg-black" data-new-gr-c-s-check-loaded="8.904.0" data-gr-ext-installed="">
+    <div id="app" data-v-app=""><!-- header nursyah --><div class="flex flex-col text-center h-[100vh] justify-center text-[#0CC5FF] bg-[rgba(12,197,255,10%)]"><h1 class="text-[3rem]">NURSYAH</h1><br><p class="mt-[-30px] sm:mt-[-10px]">Android / Web <a href="#project"><span class="bg-[#0CC5FF] text-white px-1 py-[2px] hover:bg-white hover:text-[#0CC5FF]">Developer</span></a></p><div class="flex justify-center mt-4"><!-- github --><a href="https://github.com/nursyah21"><svg class="mr-3 mt-[-3px]" width="23" height="23" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="hover:fill-white" d="M13.379 30.4219C13.379 30.5781 13.1935 30.7031 12.9597 30.7031C12.6935 30.7266 12.5081 30.6016 12.5081 30.4219C12.5081 30.2656 12.6935 30.1406 12.9274 30.1406C13.1694 30.1172 13.379 30.2422 13.379 30.4219ZM10.871 30.0703C10.8145 30.2266 10.9758 30.4062 11.2177 30.4531C11.4274 30.5312 11.6694 30.4531 11.7177 30.2969C11.7661 30.1406 11.6129 29.9609 11.371 29.8906C11.1613 29.8359 10.9274 29.9141 10.871 30.0703ZM14.4355 29.9375C14.2016 29.9922 14.0403 30.1406 14.0645 30.3203C14.0887 30.4766 14.2984 30.5781 14.5403 30.5234C14.7742 30.4688 14.9355 30.3203 14.9113 30.1641C14.8871 30.0156 14.6694 29.9141 14.4355 29.9375ZM19.7419 0C8.55645 0 0 8.22656 0 19.0625C0 27.7266 5.62903 35.1406 13.6694 37.75C14.7016 37.9297 15.0645 37.3125 15.0645 36.8047C15.0645 36.3203 15.0403 33.6484 15.0403 32.0078C15.0403 32.0078 9.39516 33.1797 8.20968 29.6797C8.20968 29.6797 7.29032 27.4062 5.96774 26.8203C5.96774 26.8203 4.12097 25.5938 6.09677 25.6172C6.09677 25.6172 8.10484 25.7734 9.20968 27.6328C10.9758 30.6484 13.9355 29.7812 15.0887 29.2656C15.2742 28.0156 15.7984 27.1484 16.379 26.6328C11.871 26.1484 7.32258 25.5156 7.32258 18C7.32258 15.8516 7.93548 14.7734 9.22581 13.3984C9.01613 12.8906 8.33064 10.7969 9.43548 8.09375C11.121 7.58594 15 10.2031 15 10.2031C16.6129 9.76563 18.3468 9.53906 20.0645 9.53906C21.7823 9.53906 23.5161 9.76563 25.129 10.2031C25.129 10.2031 29.0081 7.57812 30.6935 8.09375C31.7984 10.8047 31.1129 12.8906 30.9032 13.3984C32.1936 14.7812 32.9839 15.8594 32.9839 18C32.9839 25.5391 28.2339 26.1406 23.7258 26.6328C24.4677 27.25 25.0968 28.4219 25.0968 30.2578C25.0968 32.8906 25.0726 36.1484 25.0726 36.7891C25.0726 37.2969 25.4435 37.9141 26.4677 37.7344C34.5323 35.1406 40 27.7266 40 19.0625C40 8.22656 30.9274 0 19.7419 0ZM7.83871 26.9453C7.73387 27.0234 7.75806 27.2031 7.89516 27.3516C8.02419 27.4766 8.20968 27.5312 8.31452 27.4297C8.41935 27.3516 8.39516 27.1719 8.25806 27.0234C8.12903 26.8984 7.94355 26.8438 7.83871 26.9453ZM6.96774 26.3125C6.91129 26.4141 6.99194 26.5391 7.15323 26.6172C7.28226 26.6953 7.44355 26.6719 7.5 26.5625C7.55645 26.4609 7.47581 26.3359 7.31452 26.2578C7.15323 26.2109 7.02419 26.2344 6.96774 26.3125ZM9.58065 29.0938C9.45161 29.1953 9.5 29.4297 9.68548 29.5781C9.87097 29.7578 10.1048 29.7812 10.2097 29.6562C10.3145 29.5547 10.2661 29.3203 10.1048 29.1719C9.92742 28.9922 9.68548 28.9688 9.58065 29.0938ZM8.66129 27.9453C8.53226 28.0234 8.53226 28.2266 8.66129 28.4062C8.79032 28.5859 9.00806 28.6641 9.1129 28.5859C9.24193 28.4844 9.24193 28.2812 9.1129 28.1016C9 27.9219 8.79032 27.8438 8.66129 27.9453Z" fill="#0CC5FF"></path></svg></a><!-- email --><a href="mailto:nursyahjaya@gmail.com"><svg class="w-[23px] mt-[-2px]" width="23" height="23" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="hover:fill-white" d="M3 32C2.2 32 1.5 31.7 0.9 31.1C0.3 30.5 0 29.8 0 29V3C0 2.2 0.3 1.5 0.9 0.9C1.5 0.3 2.2 0 3 0H37C37.8 0 38.5 0.3 39.1 0.9C39.7 1.5 40 2.2 40 3V29C40 29.8 39.7 30.5 39.1 31.1C38.5 31.7 37.8 32 37 32H3ZM20 16.9L37 5.75V3L20 13.9L3 3V5.75L20 16.9Z" fill="#0CC5FF"></path></svg></a></div></div><!-- about --><div class="flex flex-col text-center h-[100vh] justify-center text-[#0CC5FF] bg-[rgba(12,197,255,12%)] p-5"><div class="justify-center flex"><div class="text-left w-[40rem]">
+ Hello, i'm software developer from indonesia, i like listen music, 
+write code and read novel. I like to publish my code in github with hope
+ it will help myself or people in the future to create app. I keep my 
+code simple and easy to read </div></div></div><!-- software, Hardware used --><div class="flex flex-col text-center h-[100vh] justify-center text-[#0CC5FF] bg-[rgba(12,197,255,14%)]"><p class="mb-1"><span class="bg-[#0CC5FF] text-white hover:text-[#0CC5FF] hover:bg-white px-1 py-[2px]">Software</span></p><div class="flex justify-center text-left text-xs sm:text-[1rem] sm:leading-5 px-3"><table class="w-max"><tbody><tr><td>vscode</td><td class="px-3">for develop web app (most used)</td></tr><tr><td>android studio</td><td class="px-3">for develop android app</td></tr><tr><td>intelij idea</td><td class="px-3">for develop java app</td></tr><tr><td>pycharm</td><td class="px-3">for develop python (big project)</td></tr><tr><td>figma</td><td class="px-3">design</td></tr><tr><td>postman</td><td class="px-3">api testing</td></tr><tr><td>jupyter-lab</td><td class="px-3">python playground</td></tr><tr><td>xampp</td><td class="px-3">apache, mysql, ftp</td></tr></tbody></table></div><p class="mt-5 mb-1"><span class="bg-[#0CC5FF] text-white hover:text-[#0CC5FF] hover:bg-white px-1 py-[2px]">Hardware | Kali Linux</span></p><div class="flex justify-center text-left text-xs sm:text-[1rem] sm:leading-5 px-3"><table class="w-max"><tbody><tr><td>cpu</td><td class="px-3">i3 6006u</td></tr><tr><td>ram</td><td class="px-3">8gb</td></tr><tr><td>ssd</td><td class="px-3">256gb</td></tr></tbody></table></div></div><!-- project --><div id="project" class="flex flex-col text-center h-[100vh] justify-center text-white bg-[rgba(37,23,81,30%)] p"><h1 class="underline text-[3rem]">Bettersleep</h1><p class="text-xs sm:text-[1rem]">Android application for those of you who forget to sleep</p><div class="flex justify-center mt-4"><img class="w-[128px] rounded-[2rem]" src="nursyah_files/logo.svg" alt=""></div><div class="flex justify-center mt-3"><a href="https://github.com/nursyah21/bettersleep"><img class="w-[128px] rounded-[2rem] hover:opacity-50" src="nursyah_files/downloadapk.svg" alt=""></a></div></div></div>
+    <script type="module" src="nursyah_files/main.js"></script>
+  
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
