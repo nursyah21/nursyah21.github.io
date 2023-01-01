@@ -3,7 +3,7 @@ layout: ../../layouts/PostLayout.astro
 title: Nursyah's blog
 author: nursyah
 date: 28-12-2022
-last_update: 01-01-2023
+last_update: 02-01-2023
 description: Story of my personal page
 --- 
 
@@ -22,7 +22,7 @@ but on my personal opinion, wordpress is quite difficult to customize how it loo
 
 then let's move to alternative solution.
 
-at that time there was a popular tool to create static site, namely [Hugo](https://gohugo.io/), so i begin to create my new personal website with this tool, you can see my previous website using this tool in -> [my website hugo](https://nursyah21.github.io/archive_hugo_web/)
+at that time there was a popular tool to create static site, namely [Hugo](https://gohugo.io/), so i begin to create my new personal website with this tool, you can see my previous website using this tool in [my website hugo](https://nursyah21.github.io/archive_hugo_web/)
 <br><br>
 
 ![hugo](/myblog/hugo.png)
