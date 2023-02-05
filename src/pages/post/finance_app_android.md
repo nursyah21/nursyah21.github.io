@@ -25,6 +25,12 @@ screenshots application
 
 source-code: https://github.com/nursyah21/financeapp-android <br><br>
 
+Update:
+now application can be download in [playstore](https://play.google.com/store/apps/details?id=com.nursyah.finance)
+
+---
+<br>
+
 The first time I made this application was because I wanted to have an Android application that could record my spending using money.
 
 Previously I recorded my expenses using the built-in application on my phone (note application). I keep track of my allowance and expenses and then do manual calculations every time I spend money or earn money.
@@ -73,7 +79,7 @@ to fix it, we can follow the advice given in the email we received, then resubmi
 <br><br>
 
 but not all applications have to be marketed through the playstore, one of the applications that I use quite often namely [newpipe](https://github.com/TeamNewPipe/NewPipe) market it via github and f-droid.
-but we will get an error message: `Play Protect doesn't recognise this app's developer. Apps from unknown developers can sometimes be unsafe`. The solution itself can be seen here
+but we will get an error message: **"Play Protect doesn't recognise this app's developer. Apps from unknown developers can sometimes be unsafe"**. The solution itself can be seen here
 
 <div class="mx-4">
 
@@ -83,6 +89,6 @@ but we will get an error message: `Play Protect doesn't recognise this app's dev
 
 </div>
 
-but the application can still be installed by installing anyway.
+but the application can still be installed by using **"installing anyway"**.
 
 <hr class="border-dashed my-8">
