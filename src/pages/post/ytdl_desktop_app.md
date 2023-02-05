@@ -11,7 +11,7 @@ description: Desktop app youtube downloader with jetpack compose
 
 ## Description
 
-ytdlDesktop is youtube downloader app, this app can download video youtube and another website like ([bilibili.com](https://www.bilibili.com/) and etc.) build with jetpack compose and ktor. extractor video using [ytdl](https://github.com/ytdl-org/youtube-dl)
+ytdlDesktop is youtube downloader app, this app can download video from youtube or another website like ([bilibili.com](https://www.bilibili.com/) and etc.) build with jetpack compose and ktor. extractor video using [ytdl](https://github.com/ytdl-org/youtube-dl)
 <br><br>
 
 ## Screenshot Application
