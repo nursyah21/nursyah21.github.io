@@ -29,7 +29,7 @@ Update:
 now application can be download in [playstore](https://play.google.com/store/apps/details?id=com.nursyah.finance)
 
 ---
-<br>
+<br><br>
 
 The first time I made this application was because I wanted to have an Android application that could record my spending using money.
 
@@ -90,5 +90,3 @@ but we will get an error message: **"Play Protect doesn't recognise this app's d
 </div>
 
 but the application can still be installed by using **"installing anyway"**.
-
-<hr class="border-dashed my-8">
