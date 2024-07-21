@@ -1,74 +1,37 @@
-# Astro Starter Kit: Blog
+# Simple Blog
 
-```sh
-npm create astro@latest -- --template blog
+[Lume](https://lume.land) theme to create a simple blog.
+
+- It supports tags and post authors.
+- RSS (Atom and JSON).
+- Sitemap and SEO features.
+- Instant search engine.
+
+## Install as a remote theme
+
+The **fastest and easiest** way to use this theme is by importing it as a remote
+module. It allows to create a blog in seconds and update it at any time just by
+changing the version number in the import URL. Just add the following code to
+your `_config.ts` file:
+
+```ts
+import lume from "lume/mod.ts";
+import blog from "https://deno.land/x/lume_theme_simple_blog@v0.10.2/mod.ts";
+
+const site = lume();
+
+site.use(blog());
+
+export default site;
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+You can see an example in the [demo](./demo) folder. To customize it copy the
+[`_data.yml`](./src/_data.yml) file in your blog root folder and edit it with
+your data. The posts must be saved in the `posts` folder. For example
+`posts/`my-first-posts.md`.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Use it as a base template
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
-
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
-
-## reference link
-
-- [emoji](https://emojicopy.com/)
-- [astro](https://astro.build/)
-- [icones](https://icones.js.org/)
+To use this theme as a base template for a more customized blog, clone this repo
+and edit the [_config.ts](./_config.ts) file. The source files are in the
+[src](./src/) folder. And you can remove the `/demo` folder.
