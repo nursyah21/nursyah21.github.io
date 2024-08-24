@@ -1,62 +1,63 @@
 ---
-import Layout from "../layouts/Layout.astro";
-	
-const getTime = (str:string) => {
-	return Date.parse(str.split('-').reverse().join('-'))
-}
-
-const post = (await Astro.glob("../pages/post/*.md")).sort(
-	(a:any, b:any) => 
-		getTime(b.frontmatter.date) - getTime(a.frontmatter.date)
-	);
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-
-<Layout title="Nursyah's page">
-	<h1><span class="text-gradient">Nursyah's</span></h1>
-	<p class="flex">
-		Hi i'm nursyah, a third year software engineer student at institut
-		teknologi telkom surabaya. currently i'm focusing on learning kotlin to create android software and something amazing. <br />
-		besides on coding i likes to listening music, and read manga or novel
-	</p>
-	<br>
-	<a href="https://www.linkedin.com/in/nursyahjaya-ramadaniputra-6b44ba149/">linkedin</a>
-	<a href="https://github.com/nursyah21" class="px-2">github</a>
-	<a href="https://drive.google.com/file/d/17f3wyqy2YX00GquNqzzu751PUgyMdHI8/view?usp=share_link">resume</a>
-
-	<!-- post / project -->
-	<section></section>
-		{
-			post.map((post) => (
-				<div class="p-2 bg-slate-800 rounded-md  my-2">
-					<div class="flex justify-between">
-						<a class="no-underline" href={post.url}>
-						{post.frontmatter.title}
-						</a>
-						<p class="text-slate-400 text-sm">
-							{post.frontmatter.date}
-						</p>
-					</div>
-
-					<p>{post.frontmatter.description}</p>
-				</div>
-			))
-			
-		}
-	
-</Layout>
-
-<style>
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Hi, I'm nursyah 👋</h1>
+			<p>
+				
+			</p>
+			<p>
+				Saya seorang web developer, yang suka belajar hal baru namun 
+				lebih suka menggunakan 
+				<a href="https://nuxt.com">
+					<code>nuxtjs</code>
+				</a>atau 
+				<a href="https://nextjs.org">
+					<code>nextjs</code>
+				</a>
+				sebagai fullstack framework,
+				atau menggunakan 
+				<a href="https://react.dev">
+					<code>react</code>
+				</a>
+				<a href="https://vuejs.org">
+					<code>vue</code>
+				</a>
+				untuk frontend
+				dan untuk backend menggunakan 
+				<a href="https://echo.labstack.com">
+					<code>golang echo</code>
+				</a>, 
+				<a href="https://fastapi.tiangolo.com">
+					<code>python fastapi</code>
+				</a>, atau
+				<a href="https://hono.dev">
+					<code>nodejs hono</code>					
+				</a>
+			</p>
+			<!-- <p>Berikut post yang mungkin menarik untuk anda baca:</p> -->
+			<ul>
+				<!-- <li>Edit this page in <code>src/pages/index.astro</code></li>
+				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
+				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
+				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
+				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li> -->
+			</ul>
+			<p>
+				Selamat membaca
+			</p>			
+		</main>
+		<Footer />
+	</body>
+</html>
