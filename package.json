@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "publish": "pnpm run build && git add . && git commit -m 'update content' && git push"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
