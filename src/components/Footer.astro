@@ -2,7 +2,7 @@
 const today = new Date();
 ---
 
-<footer>
+<footer class="">
 	&copy; {today.getFullYear()} Nursyah Dev. All rights reserved.
 	<div class="social-links">
 		<a href="https://instagram.com/n.ursyah" target="_blank">
@@ -27,9 +27,13 @@ const today = new Date();
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
+		/* background: linear-gradient(var(--gray-gradient)) no-repeat; */
 		color: rgb(var(--gray));
 		text-align: center;
+	}
+	footer.dark {
+		background-color: rgb(var(--black));
+		color: #fff;
 	}
 	.social-links {
 		display: flex;

@@ -57,7 +57,7 @@ const posts = (await getCollection('blog')).filter(
 			}
 			.title {
 				margin: 0;
-				color: rgb(var(--black));
+				/* color: rgb(var(--gray)); */
 				line-height: 1;
 			}
 			.date {
@@ -68,6 +68,7 @@ const posts = (await getCollection('blog')).filter(
 			ul li a:hover .date {
 				color: rgb(var(--accent));
 			}
+			
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
