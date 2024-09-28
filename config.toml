@@ -1,4 +1,4 @@
-baseURL = 'https://nursyah21.github.io/nursyah-blog/'
+baseURL = ''
 languageCode = 'en-us'
 title = 'My Coding Journey'
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
