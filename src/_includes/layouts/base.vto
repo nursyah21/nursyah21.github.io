@@ -17,10 +17,12 @@
     <link rel="canonical" href="{{ url |> url(true) }}">
     <script src="/js/main.js" type="module"></script>
     {{ it.extra_head?.join("\n") }}
+
+    
   </head>
   <body>
     <nav class="navbar">
-      <a href="/" class="navbar-home">
+      <a href="/" class="navbar-home">        
         {{ if it.logo }}
           {{ it.logo }}
         {{ else }}
@@ -64,8 +66,12 @@
 
     <main class="{{ it.bodyClass }}">
       {{ content }}
-    </main>
 
-    <!-- Current page: {{ url }} -->
+      <div class="footer">
+      <a href="https://lume.land/">Build with lume</a>        
+      </div>
+    </main>
+     {{# Current page: {{ url }}  #}}
+    
   </body>
 </html>

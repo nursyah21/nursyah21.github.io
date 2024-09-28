@@ -47,7 +47,7 @@ bodyClass: body-post
       {{ /for }}
     </dl>
   </aside>
-  {{ /if }}
+  {{# {{ /if }}
 
   {{ if it.comments?.src }}
   <aside class="comments-section">
@@ -59,7 +59,7 @@ bodyClass: body-post
       {{ i18n.comments.empty }}
     </mastodon-comments>
   {{ /if }}
-  </aside>
+  </aside> #}}
 </article>
 
 <nav class="page-pagination pagination">

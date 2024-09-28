@@ -10,6 +10,7 @@ title: Home
   <div class="search" id="search"></div>
 </header>
 
+  
 <section class="postList">
   {{ for post of search.pages("type=post", "date=desc", 3) }}
   <article class="post">
@@ -40,5 +41,4 @@ title: Home
 </section>
 
 <hr>
-
-<p>{{ i18n.nav.archive }}</p>
+ 
