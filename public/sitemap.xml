@@ -2,16 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nursyah21.github.io/nursyah-blog/</loc>
-    <lastmod>2022-04-06T14:18:14+07:00</lastmod>
-  </url><url>
     <loc>https://nursyah21.github.io/nursyah-blog/posts/</loc>
-    <lastmod>2022-04-06T14:18:14+07:00</lastmod>
+    <lastmod>2022-04-21T21:39:10+07:00</lastmod>
+  </url><url>
+    <loc>https://nursyah21.github.io/nursyah-blog/posts/docker-and-laravel/</loc>
+    <lastmod>2022-04-21T21:39:10+07:00</lastmod>
+  </url><url>
+    <loc>https://nursyah21.github.io/nursyah-blog/posts/interview-preparation-kit/</loc>
+    <lastmod>2022-04-21T16:52:47+07:00</lastmod>
+  </url><url>
+    <loc>https://nursyah21.github.io/nursyah-blog/posts/how-i-learn-golang-with-this-repo/</loc>
+    <lastmod>2022-04-08T20:26:59+07:00</lastmod>
+  </url><url>
+    <loc>https://nursyah21.github.io/nursyah-blog/</loc>
+    <lastmod>2022-04-06T18:34:13+07:00</lastmod>
   </url><url>
     <loc>https://nursyah21.github.io/nursyah-blog/posts/publish-hugo-to-github/</loc>
     <lastmod>2022-04-06T14:18:14+07:00</lastmod>
   </url><url>
+    <loc>https://nursyah21.github.io/nursyah-blog/about/</loc>
+  </url><url>
     <loc>https://nursyah21.github.io/nursyah-blog/categories/</loc>
+  </url><url>
+    <loc>https://nursyah21.github.io/nursyah-blog/project/</loc>
   </url><url>
     <loc>https://nursyah21.github.io/nursyah-blog/tags/</loc>
   </url>

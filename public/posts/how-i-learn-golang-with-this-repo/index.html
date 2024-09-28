@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>How I Learn Golang With This Repo | My Coding Journey</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software. —Golang.org
+If you want to develop faster, perhaps because you have many different services to write, or you have a large team of developers, then Go is your language of choice. Go gives you concurrency as a first-class citizen, and does not tolerate unsafe memory access (neither does Rust), but without forcing you to manage every last detail.">
+    <meta name="generator" content="Hugo 0.123.7">
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/nursyah-blog/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="How I Learn Golang With This Repo" />
+<meta property="og:description" content="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software. —Golang.org
+If you want to develop faster, perhaps because you have many different services to write, or you have a large team of developers, then Go is your language of choice. Go gives you concurrency as a first-class citizen, and does not tolerate unsafe memory access (neither does Rust), but without forcing you to manage every last detail." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nursyah21.github.io/nursyah-blog/posts/how-i-learn-golang-with-this-repo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-08T20:26:59+07:00" />
+<meta property="article:modified_time" content="2022-04-08T20:26:59+07:00" />
+
+<meta itemprop="name" content="How I Learn Golang With This Repo">
+<meta itemprop="description" content="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software. —Golang.org
+If you want to develop faster, perhaps because you have many different services to write, or you have a large team of developers, then Go is your language of choice. Go gives you concurrency as a first-class citizen, and does not tolerate unsafe memory access (neither does Rust), but without forcing you to manage every last detail."><meta itemprop="datePublished" content="2022-04-08T20:26:59+07:00" />
+<meta itemprop="dateModified" content="2022-04-08T20:26:59+07:00" />
+<meta itemprop="wordCount" content="1084">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="How I Learn Golang With This Repo"/>
+<meta name="twitter:description" content="Go is an open source programming language that makes it easy to build simple, reliable, and efficient software. —Golang.org
+If you want to develop faster, perhaps because you have many different services to write, or you have a large team of developers, then Go is your language of choice. Go gives you concurrency as a first-class citizen, and does not tolerate unsafe memory access (neither does Rust), but without forcing you to manage every last detail."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/nursyah-blog/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        My Coding Journey
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/nursyah-blog/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/nursyah-blog/posts/" title="Articles page">
+              Articles
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/nursyah-blog/project/" title="Project page">
+              Project
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+<div class="ananke-socials">
+  
+    <a href="https://github.com/nursyah21" target="_blank" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel="noopener" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div>
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        ARTICLES
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">How I Learn Golang With This Repo</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-04-08T20:26:59+07:00">April 8, 2022</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.
+—Golang.org</p>
+<p>If you want to develop faster, perhaps because you have many different services to write, or you have a large team of developers, then Go is your language of choice. Go gives you concurrency as a first-class citizen, and does not tolerate unsafe memory access (neither does Rust), but without forcing you to manage every last detail. Go is fast and powerful, but it avoids bogging the developer down, focusing instead on simplicity and uniformity. If on the other hand, wringing out every last ounce of performance is a necessity, then Rust should be your choice.
+—Andrew Lader</p>
+<p>find more about go vs rust, in this link <a href="https://bitfieldconsulting.com/golang/rust-vs-go">https://bitfieldconsulting.com/golang/rust-vs-go</a></p>
+<hr>
+<p>link to learn, please fork and clone to your local <a href="https://github.com/nursyah21/GolangTraining">Golang Training</a></p>
+<p>after we clone repo, we need install tools for golang
+<figure><img src="../../images/how-i-learn-golang-with-this-repo/ss1.png"/>
+</figure>
+</p>
+<p>dont forget to create new branch so we keep originals untouch</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git checkout -b exercise
+</span></span></code></pre></div><p>and we move all exercise like 01, 02, .. to clone folder</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir clone
+</span></span><span style="display:flex;"><span>mv 0* 1* 2* clone
+</span></span></code></pre></div><p>and we create folder to organize all code</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir 01_getting_started
+</span></span><span style="display:flex;"><span>touch 01_getting_started/main.go
+</span></span></code></pre></div><hr>
+<hr>
+<h3 id="exercise">exercise</h3>
+<p><strong>first we learn get_started</strong></p>
+<p>we learn some basics like, decimal, binary, hexadecimal, and loop</p>
+<p><strong>we learn packages</strong></p>
+<p>Go programs are organized into packages. A package is a collection of source files in the same directory that are compiled together. Functions, types, variables, and constants defined in one source file are visible to all other source files within the same package.</p>
+<p>A repository contains one or more modules. A module is a collection of related Go packages that are released together. A Go repository typically contains only one module, located at the root of the repository. A file named go.mod there declares the module path: the import path prefix for all packages within the module. The module contains the packages in the directory containing its go.mod file as well as subdirectories of that directory, up to the next subdirectory containing another go.mod file (if any).</p>
+<p>we create some folder,to structure code</p>
+<p>we need to use go mod init, to install module, if we want to import local package</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir hello <span style="color:#75715e"># Alternatively, clone it if it already exists in version control.</span>
+</span></span><span style="display:flex;"><span>cd hello
+</span></span><span style="display:flex;"><span>go mod init example/user/hello
+</span></span><span style="display:flex;"><span>go: creating new go.mod: module example/user/hello
+</span></span><span style="display:flex;"><span>cat go.mod
+</span></span><span style="display:flex;"><span>module example/user/hello
+</span></span></code></pre></div><p>Note that you don&rsquo;t need to publish your code to a remote repository before you can build it. A module can be defined locally without belonging to a repository. However, it&rsquo;s a good habit to organize your code as if you will publish it someday.</p>
+<p>by default, in this repository module is import in remote repository but for this exercise we import local module</p>
+<p>please refer to this link <a href="https://go.dev/doc/code">https://go.dev/doc/code</a></p>
+<hr>
+<p>my summary for chapter 1, you will find some code similiar with c/c++ you can create &ldquo;* <em>pointer</em>&rdquo; and  &ldquo;&amp; <em>address</em>&rdquo; in this chapter, if you find trouble to try import module in local, please refer to this video <a href="https://www.youtube.com/watch?v=Nv8J_Ruc280">https://www.youtube.com/watch?v=Nv8J_Ruc280</a></p>
+<figure><img src="../../images/how-i-learn-golang-with-this-repo/ss2.png"/>
+</figure>
+
+<p>this is sample code of 13_excercise-solutions</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// go will check your code
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#75715e">// for safety this good
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">numOne</span>, <span style="color:#a6e22e">numTwo</span>  = <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">12</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Print</span>(<span style="color:#e6db74">&#34;Please enter your name: &#34;</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Scan</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">name</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>, <span style="color:#a6e22e">name</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">numOne</span><span style="color:#f92672">%</span><span style="color:#a6e22e">numTwo</span>) <span style="color:#75715e">// modulo
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Hello&#34;</span>[<span style="color:#ae81ff">1</span>]) <span style="color:#75715e">//utf
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#66d9ef">false</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;not run&#34;</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><hr>
+<p>in chapter 13-16 you will find some concept similiar with c/c++</p>
+<figure><img src="../../images/how-i-learn-golang-with-this-repo/ss3.png"/>
+</figure>
+
+<p>sample code of 16_exercise</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> <span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">half</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) (<span style="color:#66d9ef">float64</span>, <span style="color:#66d9ef">bool</span>) {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> float64(<span style="color:#a6e22e">n</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">n</span><span style="color:#f92672">%</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">foo</span>(<span style="color:#a6e22e">numbers</span> <span style="color:#f92672">...</span><span style="color:#66d9ef">int</span>){
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">numbers</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">half2</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">n</span> <span style="color:#66d9ef">int</span>) (<span style="color:#66d9ef">float64</span>, <span style="color:#66d9ef">bool</span>) {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> float64(<span style="color:#a6e22e">n</span>) <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">n</span><span style="color:#f92672">%</span><span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">h</span>, <span style="color:#a6e22e">even</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">half2</span>(<span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">h</span>, <span style="color:#a6e22e">even</span>)
+</span></span><span style="display:flex;"><span>	
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">foo</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>but in chapter 17 and later, you will find the exercise getting hard, you will learn some syntax and function in go</p>
+<p>sample code in 25_code_walk</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span><span style="color:#75715e">// Copyright 2011 The Go Authors. All rights reserved.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Use of this source code is governed by a BSD-style
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">// license that can be found in the LICENSE file.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> (
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;fmt&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#e6db74">&#34;math/rand&#34;</span>
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> (
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">win</span>            = <span style="color:#ae81ff">100</span> <span style="color:#75715e">// The winning score in a game of Pig
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#a6e22e">gamesPerSeries</span> = <span style="color:#ae81ff">10</span>  <span style="color:#75715e">// The number of games per series to simulate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">score</span> <span style="color:#66d9ef">struct</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">player</span>, <span style="color:#a6e22e">opponent</span>, <span style="color:#a6e22e">thisTurn</span> <span style="color:#66d9ef">int</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">action</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">current</span> <span style="color:#a6e22e">score</span>) (<span style="color:#a6e22e">result</span> <span style="color:#a6e22e">score</span>, <span style="color:#a6e22e">turnIsOver</span> <span style="color:#66d9ef">bool</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">roll</span>(<span style="color:#a6e22e">s</span> <span style="color:#a6e22e">score</span>) (<span style="color:#a6e22e">score</span>, <span style="color:#66d9ef">bool</span>) {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">outcome</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Intn</span>(<span style="color:#ae81ff">6</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#75715e">// A random int in [1, 6]
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">outcome</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">score</span>{<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">opponent</span>, <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">player</span>, <span style="color:#ae81ff">0</span>}, <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">score</span>{<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">player</span>, <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">opponent</span>, <span style="color:#a6e22e">outcome</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">thisTurn</span>}, <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">stay</span>(<span style="color:#a6e22e">s</span> <span style="color:#a6e22e">score</span>) (<span style="color:#a6e22e">score</span>, <span style="color:#66d9ef">bool</span>) {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">score</span>{<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">opponent</span>, <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">player</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">thisTurn</span>, <span style="color:#ae81ff">0</span>}, <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">strategy</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">score</span>) <span style="color:#a6e22e">action</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">stayAtK</span>(<span style="color:#a6e22e">k</span> <span style="color:#66d9ef">int</span>) <span style="color:#a6e22e">strategy</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">func</span>(<span style="color:#a6e22e">s</span> <span style="color:#a6e22e">score</span>) <span style="color:#a6e22e">action</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">thisTurn</span> <span style="color:#f92672">&gt;=</span> <span style="color:#a6e22e">k</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">stay</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">roll</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">play</span>(<span style="color:#a6e22e">strategy0</span>, <span style="color:#a6e22e">strategy1</span> <span style="color:#a6e22e">strategy</span>) <span style="color:#66d9ef">int</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">strategies</span> <span style="color:#f92672">:=</span> []<span style="color:#a6e22e">strategy</span>{<span style="color:#a6e22e">strategy0</span>, <span style="color:#a6e22e">strategy1</span>}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#a6e22e">score</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">turnIsOver</span> <span style="color:#66d9ef">bool</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">currentPlayer</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">Intn</span>(<span style="color:#ae81ff">2</span>) <span style="color:#75715e">// Randomly decide who plays first
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">player</span><span style="color:#f92672">+</span><span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">thisTurn</span> &lt; <span style="color:#a6e22e">win</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">action</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">strategies</span>[<span style="color:#a6e22e">currentPlayer</span>](<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">s</span>, <span style="color:#a6e22e">turnIsOver</span> = <span style="color:#a6e22e">action</span>(<span style="color:#a6e22e">s</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">turnIsOver</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">currentPlayer</span> = (<span style="color:#a6e22e">currentPlayer</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">currentPlayer</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">roundRobin</span>(<span style="color:#a6e22e">strategies</span> []<span style="color:#a6e22e">strategy</span>) ([]<span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">int</span>) {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">wins</span> <span style="color:#f92672">:=</span> make([]<span style="color:#66d9ef">int</span>, len(<span style="color:#a6e22e">strategies</span>))
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> &lt; len(<span style="color:#a6e22e">strategies</span>); <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">j</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>; <span style="color:#a6e22e">j</span> &lt; len(<span style="color:#a6e22e">strategies</span>); <span style="color:#a6e22e">j</span><span style="color:#f92672">++</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">k</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">k</span> &lt; <span style="color:#a6e22e">gamesPerSeries</span>; <span style="color:#a6e22e">k</span><span style="color:#f92672">++</span> {
+</span></span><span style="display:flex;"><span>				<span style="color:#a6e22e">winner</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">play</span>(<span style="color:#a6e22e">strategies</span>[<span style="color:#a6e22e">i</span>], <span style="color:#a6e22e">strategies</span>[<span style="color:#a6e22e">j</span>])
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">winner</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> {
+</span></span><span style="display:flex;"><span>					<span style="color:#a6e22e">wins</span>[<span style="color:#a6e22e">i</span>]<span style="color:#f92672">++</span>
+</span></span><span style="display:flex;"><span>				} <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>					<span style="color:#a6e22e">wins</span>[<span style="color:#a6e22e">j</span>]<span style="color:#f92672">++</span>
+</span></span><span style="display:flex;"><span>				}
+</span></span><span style="display:flex;"><span>			}
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">gamesPerStrategy</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">gamesPerSeries</span> <span style="color:#f92672">*</span> (len(<span style="color:#a6e22e">strategies</span>) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#75715e">// no self play
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">wins</span>, <span style="color:#a6e22e">gamesPerStrategy</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">ratioString</span>(<span style="color:#a6e22e">vals</span> <span style="color:#f92672">...</span><span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">string</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">total</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">val</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">vals</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">total</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">val</span>
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">s</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">_</span>, <span style="color:#a6e22e">val</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">vals</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;&#34;</span> {
+</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">s</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;, &#34;</span>
+</span></span><span style="display:flex;"><span>		}
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">pct</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">100</span> <span style="color:#f92672">*</span> float64(<span style="color:#a6e22e">val</span>) <span style="color:#f92672">/</span> float64(<span style="color:#a6e22e">total</span>)
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">s</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;%d/%d (%0.1f%%)&#34;</span>, <span style="color:#a6e22e">val</span>, <span style="color:#a6e22e">total</span>, <span style="color:#a6e22e">pct</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> <span style="color:#a6e22e">s</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">strategies</span> <span style="color:#f92672">:=</span> make([]<span style="color:#a6e22e">strategy</span>, <span style="color:#a6e22e">win</span>)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">k</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">strategies</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">strategies</span>[<span style="color:#a6e22e">k</span>] = <span style="color:#a6e22e">stayAtK</span>(<span style="color:#a6e22e">k</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">wins</span>, <span style="color:#a6e22e">games</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">roundRobin</span>(<span style="color:#a6e22e">strategies</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">k</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">range</span> <span style="color:#a6e22e">strategies</span> {
+</span></span><span style="display:flex;"><span>		<span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Printf</span>(<span style="color:#e6db74">&#34;Wins, losses staying at k =% 4d: %s\n&#34;</span>,
+</span></span><span style="display:flex;"><span>			<span style="color:#a6e22e">k</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">ratioString</span>(<span style="color:#a6e22e">wins</span>[<span style="color:#a6e22e">k</span>], <span style="color:#a6e22e">games</span><span style="color:#f92672">-</span><span style="color:#a6e22e">wins</span>[<span style="color:#a6e22e">k</span>]))
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>because in some exercise you will find chan (channel) ,maybe you will need to know what about is this, <a href="https://golangdocs.com/channels-in-golang">https://golangdocs.com/channels-in-golang</a></p>
+<hr>
+<p>total of exercise in this repo is 99, but we will stop in chapter 26_questions-from-students</p>
+<p><figure><img src="../../images/how-i-learn-golang-with-this-repo/ss4.png"/>
+</figure>
+
+<figure><img src="../../images/how-i-learn-golang-with-this-repo/ss5.png"/>
+</figure>
+</p>
+<p>at least for now we have some basics of go and we ready to start learn another project in go.</p>
+<!-- raw HTML omitted -->
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nursyah" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://nursyah21.github.io/nursyah-blog/" >
+    &copy;  My Coding Journey 2024 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+    <a href="https://github.com/nursyah21" target="_blank" class="github ananke-social-link link-transition stackoverflow link dib z-999 pt3 pt0-l mr1" title="GitHub link" rel="noopener" aria-label="follow on GitHub——Opens in a new window">
+      
+        <span class="icon"><svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+</span>
+      
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;"/>
+</svg>
+</span></a>
+  
+</div></div>
+  </div>
+</footer>
+
+  </body>
+</html>

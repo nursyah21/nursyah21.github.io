@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Articles on My Coding Journey</title>
     <link>https://nursyah21.github.io/nursyah-blog/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Articles on My Coding Journey</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Apr 2022 14:18:14 +0700</lastBuildDate><atom:link href="https://nursyah21.github.io/nursyah-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 21 Apr 2022 21:39:10 +0700</lastBuildDate>
+    <atom:link href="https://nursyah21.github.io/nursyah-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker, Laravel and React</title>
+      <link>https://nursyah21.github.io/nursyah-blog/posts/docker-and-laravel/</link>
+      <pubDate>Thu, 21 Apr 2022 21:39:10 +0700</pubDate>
+      <guid>https://nursyah21.github.io/nursyah-blog/posts/docker-and-laravel/</guid>
+      <description>i want to build web application, and the requirement my application is:&#xA;backend: php (laravel) frontend: reactjs and i want to try docker, for deploy my application.&#xA;first install composer, this composer we used to install php framework like laravel.&#xA;curl -Ss getcomposer.org/installer | php sudo mv composer.phar /usr/local/bin/composer here you will get information regarding how to install composer in each platform:&#xA;Linux/Unix macOs Windows make folder for web application, and install laravel in that folder</description>
+    </item>
+    <item>
+      <title>Interview Preparation Kit</title>
+      <link>https://nursyah21.github.io/nursyah-blog/posts/interview-preparation-kit/</link>
+      <pubDate>Thu, 21 Apr 2022 16:52:47 +0700</pubDate>
+      <guid>https://nursyah21.github.io/nursyah-blog/posts/interview-preparation-kit/</guid>
+      <description>hello, this is my post 3th, i learn interview preparation in hackerrank almost my code i write in golang, but some code in python or cpp. the repository so for reference i use discussion in hackerrank, or i read the implementation in the-algorithms.com. need learn more data structure, like graphs, tree, tries, heap. wish me luck</description>
+    </item>
+    <item>
+      <title>How I Learn Golang With This Repo</title>
+      <link>https://nursyah21.github.io/nursyah-blog/posts/how-i-learn-golang-with-this-repo/</link>
+      <pubDate>Fri, 08 Apr 2022 20:26:59 +0700</pubDate>
+      <guid>https://nursyah21.github.io/nursyah-blog/posts/how-i-learn-golang-with-this-repo/</guid>
+      <description>Go is an open source programming language that makes it easy to build simple, reliable, and efficient software. —Golang.org&#xA;If you want to develop faster, perhaps because you have many different services to write, or you have a large team of developers, then Go is your language of choice. Go gives you concurrency as a first-class citizen, and does not tolerate unsafe memory access (neither does Rust), but without forcing you to manage every last detail.</description>
+    </item>
     <item>
       <title>Publish Hugo to Github</title>
       <link>https://nursyah21.github.io/nursyah-blog/posts/publish-hugo-to-github/</link>
       <pubDate>Wed, 06 Apr 2022 14:18:14 +0700</pubDate>
-      
       <guid>https://nursyah21.github.io/nursyah-blog/posts/publish-hugo-to-github/</guid>
-      <description></description>
+      <description>create blog with hugo and host with github Hugo is a static HTML and CSS website generator written in Go. It is optimized for speed, ease of use, and configurability. Hugo takes a directory with content and templates and renders them into a full HTML website.&#xA;Hugo relies on Markdown files with front matter for metadata, and you can run Hugo from any directory. This works well for shared hosts and other systems where you don’t have a privileged account.</description>
     </item>
-    
   </channel>
 </rss>
