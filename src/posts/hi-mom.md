@@ -1,7 +1,10 @@
 ---
-title: "Hi Mom"
-date: "2024-08-24"
+title: Hi Mom
+date: '2024-08-24'
 author: Nursyah
+draft: true
+tags: []
+comments: {}
 ---
 <a href="https://www.youtube.com/watch?v=VNUesDeon28" class="text-slate-600 underline">
 hi mom, apa kabar?
